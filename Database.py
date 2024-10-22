@@ -44,6 +44,16 @@ class Database:
 
         print("Nodes deleted successfully")
 
+    def filter_departments(self,DepartmentName):
+
+        query = "MATCH (c:COMMUNES)-[:`SE SITUE DANS`]->(d:DEPARTEMENTS) WHERE d.departement = '" +  DepartmentName + "' RETURN c.nomcom AS commune"
+        
+        with self.driver.session() as session:
+            result = session.run(query)
+            
+            return result.data()
+
+
 
 
 

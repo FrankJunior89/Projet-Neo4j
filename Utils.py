@@ -1,7 +1,7 @@
 import json
 
 
-Departements = ("Pas de Préférences","Paris","Seine et Marne","Yvelines","Essonne","Hauts de Seine","Seine Saint Denis","Val de Marne", "Val d'Oise")
+Departements = ("Pas de Préférences","Paris","Seine-et-Marne","Yvelines","Essonne","Hauts-de-Seine","Seine-Saint-Denis","Val-de-Marne", "Val-d'oise")
 
 def load_credentials(file_path):
 
